@@ -1,8 +1,11 @@
 <script setup>
+import Carousel from './components/Carousel.vue';
+import Head from './components/Header.vue';
 </script>
 
 <template>
-    <h1>JAVEX PALACE BABY!!!!</h1>
+    <Head/>
+    <Carousel/>
 </template>
 
 <style scoped>
