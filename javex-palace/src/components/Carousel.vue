@@ -1,20 +1,12 @@
-<script >
-export default {
-    data() {
-        return {
-            teste: [
-                '../assets/images/1.jpg',
-                '../assets/images/2.jpg',
-                '../assets/images/3.jpg',
-            ],
-        }
-    }
-}
+<script setup>
+    var imagePaths = [ 
+        "../../src/assets/images/1.jpg", "../../src/assets/images/2.jpg", "../../src/assets/images/3.jpg", "../../src/assets/images/1.jpg", "../../src/assets/images/2.jpg", "../../src/assets/images/3.jpg",
+    ];
 </script>
 
 <template>
     <div class="carousel">
-        <img class="image" v-for="imagem in teste" :src="imagem.url">
+        <img class="image" v-for="imagePath in imagePaths" :src="imagePath">
     </div>
 </template>
 
@@ -37,5 +29,6 @@ export default {
         width: 100%;
         height: 10rem;
         border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
     }
 </style>
