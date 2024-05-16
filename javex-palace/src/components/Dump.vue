@@ -40,6 +40,7 @@
         background-size: cover;
         background-position: center center;
         background-color: black;
+        border-right: black 1px solid;
     }
 
     div:hover{
