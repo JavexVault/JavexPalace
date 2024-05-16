@@ -2,7 +2,11 @@
 export default {
     data() {
         return {
-            teste: '1.jpg',
+            teste: [
+                '../assets/images/1.jpg',
+                '../assets/images/2.jpg',
+                '../assets/images/3.jpg',
+            ],
         }
     }
 }
@@ -10,7 +14,7 @@ export default {
 
 <template>
     <div class="carousel">
-        <img class="image" :src="'./images/' + teste">
+        <img class="image" v-for="imagem in teste" :src="imagem.url">
     </div>
 </template>
 

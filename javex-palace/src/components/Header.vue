@@ -46,6 +46,8 @@
         color: white;
         font-size: small;
         font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
     }
 
     a {
