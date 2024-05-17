@@ -26,7 +26,7 @@
     }
 
     .image {
-        width: 100%;
+        min-width: 50%;
         height: 10rem;
         border-radius: 10px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);

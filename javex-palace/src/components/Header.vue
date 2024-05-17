@@ -1,8 +1,12 @@
-<script></script>
+<script>
+import { RouterLink } from 'vue-router';
+</script>
 
 <template>
     <header>
-        <h1>Javex Palace</h1>
+        <RouterLink class="router-link" to="/">
+            <h1>Javex Palace</h1>
+        </RouterLink>
         <div class="hamburguer">
             <a><i class="fa-solid fa-bars"></i></a>
         </div>
@@ -83,6 +87,9 @@
             transform: scale(1.2);
         }
         
+        .router-link{
+            text-decoration: none;
+        }
     }
 
 </style>
