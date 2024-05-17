@@ -1,15 +1,11 @@
 <script setup>
-import Carousel from './components/Carousel.vue';
-import Head from './components/Header.vue';
-import Dump from './components/Dump.vue';
-import Hub from './components/HubImage.vue'
+import TopBar from './components/Header.vue'
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-    <Head/>
-    <Hub/>
-    <Dump/>
-    <Carousel/>
+<TopBar/>
+<RouterView/>
 </template>
 
 <style scoped>

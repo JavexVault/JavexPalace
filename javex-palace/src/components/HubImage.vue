@@ -4,7 +4,9 @@
         <h1>Welcome to the future</h1>
     </div>
     <div class="lower">
-        <button class="botao">Reserve ja</button>
+        <RouterLink class="router-link" to="/booking">
+            <button class="botao">Reserve ja</button>
+        </RouterLink>
     </div>
 </div>
 </template>
@@ -42,7 +44,7 @@
     }
 
     .botao{
-        width: 40%;
+        width: 100%;
         height: 3rem;
         border-radius: 30px;
         transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -55,6 +57,10 @@
             color: aliceblue;
     }
 
+    .router-link {
+        width: 40%;
+    }
+
     @media screen and (min-width:700px){
         .botao{
         width: 20%;
@@ -64,6 +70,6 @@
 </style>
 
 <script>
-    
+import { RouterLink } from 'vue-router';  
 </script>
 
