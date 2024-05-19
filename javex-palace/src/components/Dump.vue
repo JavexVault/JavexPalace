@@ -13,11 +13,11 @@
         width: 100%;
         height: 23em;
         justify-content: center;
+        overflow: hidden;
     }
     .img {
         width: 100%;
         height: 100%;
-        filter: blur(2px 0);
         background: url(../assets/images/1.jpg);
         background-position: center;
         background-size: cover;
@@ -47,7 +47,6 @@
     }
     .img:hover {
         width: 175%;
-        z-index: 2;
         .bg {
             opacity: 0;
         }
